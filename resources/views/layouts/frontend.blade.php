@@ -31,8 +31,10 @@
         @include('frontend.header')
 
         <!-- Content Section-->
-        <section class="page-section">
+        <section class="page-section" id="aboute">
             <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Aboute me!</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
