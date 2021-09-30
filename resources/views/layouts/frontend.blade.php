@@ -7,7 +7,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'Learning languages') }}</title>
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
@@ -27,30 +27,12 @@
     </head>
     <body id="page-top">
 
-        @include('frontend.navigation')
         @include('frontend.header')
 
-        <!-- Content Section-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Aboute me!</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    @yield('content')
-                </div>
-            </div>
-        </section>
+        @yield('content')
 
         @include('frontend.contact')
         @include('frontend.footer')
-        @include('frontend.copyright')
         
 
         <!-- Bootstrap core JS-->
